@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76A092FF25FEBA8B00127043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A092FD25FEBA8B00127043 /* LaunchScreen.storyboard */; };
+		76A0932C25FEBB2000127043 /* Hanken-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76A0930825FEBB1F00127043 /* Hanken-Light.ttf */; };
+		76A0932D25FEBB2000127043 /* Hanken-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76A0930925FEBB1F00127043 /* Hanken-Book.ttf */; };
+		76A0932E25FEBB2000127043 /* DashboardViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0930C25FEBB1F00127043 /* DashboardViewInteractor.swift */; };
+		76A0932F25FEBB2000127043 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0930D25FEBB1F00127043 /* DashboardViewController.swift */; };
+		76A0933025FEBB2000127043 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A0930E25FEBB1F00127043 /* DashboardViewController.xib */; };
+		76A0933125FEBB2000127043 /* DashboardViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0930F25FEBB1F00127043 /* DashboardViewRouter.swift */; };
+		76A0933225FEBB2000127043 /* DashboardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0931025FEBB1F00127043 /* DashboardViewPresenter.swift */; };
+		76A0933325FEBB2000127043 /* MeditationDetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0931225FEBB1F00127043 /* MeditationDetailViewPresenter.swift */; };
+		76A0933425FEBB2000127043 /* MeditationDetailViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0931325FEBB1F00127043 /* MeditationDetailViewInteractor.swift */; };
+		76A0933525FEBB2000127043 /* MeditationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0931425FEBB1F00127043 /* MeditationDetailViewController.swift */; };
+		76A0933625FEBB2000127043 /* MeditationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A0931525FEBB1F00127043 /* MeditationDetailViewController.xib */; };
+		76A0933725FEBB2000127043 /* MeditationDetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0931625FEBB1F00127043 /* MeditationDetailViewRouter.swift */; };
+		76A0933925FEBB2000127043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A0931925FEBB1F00127043 /* LaunchScreen.storyboard */; };
+		76A0933A25FEBB2000127043 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0931D25FEBB1F00127043 /* LoaderView.swift */; };
+		76A0933B25FEBB2000127043 /* CollectionViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0931F25FEBB1F00127043 /* CollectionViewInterface.swift */; };
+		76A0933C25FEBB2000127043 /* BaseViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0932025FEBB1F00127043 /* BaseViewInterface.swift */; };
+		76A0933D25FEBB2000127043 /* TableViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0932125FEBB1F00127043 /* TableViewInterface.swift */; };
+		76A0933E25FEBB2000127043 /* CollectionViewPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0932325FEBB1F00127043 /* CollectionViewPresenterInterface.swift */; };
+		76A0933F25FEBB2000127043 /* BasePresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0932425FEBB1F00127043 /* BasePresenterInterface.swift */; };
+		76A0934025FEBB2000127043 /* BaseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0932625FEBB1F00127043 /* BaseInteractorOutput.swift */; };
+		76A0934125FEBB2000127043 /* CollectionViewTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0932825FEBB1F00127043 /* CollectionViewTag.swift */; };
+		76A0934225FEBB2000127043 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0932A25FEBB1F00127043 /* AppDIContainer.swift */; };
+		76A0934325FEBB2000127043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0932B25FEBB1F00127043 /* AppDelegate.swift */; };
+		76A0938525FEBBCB00127043 /* Meditations_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A0938425FEBBCB00127043 /* Meditations_UI.framework */; };
+		76A0938625FEBBCB00127043 /* Meditations_UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76A0938425FEBBCB00127043 /* Meditations_UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		76A0939425FEC18A00127043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A0939325FEC18A00127043 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76A0938725FEBBCB00127043 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				76A0938625FEBBCB00127043 /* Meditations_UI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		76A092EF25FEBA8A00127043 /* Meditations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A092FE25FEBA8B00127043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76A0930025FEBA8B00127043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A0930825FEBB1F00127043 /* Hanken-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hanken-Light.ttf"; sourceTree = "<group>"; };
+		76A0930925FEBB1F00127043 /* Hanken-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hanken-Book.ttf"; sourceTree = "<group>"; };
+		76A0930C25FEBB1F00127043 /* DashboardViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewInteractor.swift; sourceTree = "<group>"; };
+		76A0930D25FEBB1F00127043 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		76A0930E25FEBB1F00127043 /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		76A0930F25FEBB1F00127043 /* DashboardViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewRouter.swift; sourceTree = "<group>"; };
+		76A0931025FEBB1F00127043 /* DashboardViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewPresenter.swift; sourceTree = "<group>"; };
+		76A0931225FEBB1F00127043 /* MeditationDetailViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationDetailViewPresenter.swift; sourceTree = "<group>"; };
+		76A0931325FEBB1F00127043 /* MeditationDetailViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationDetailViewInteractor.swift; sourceTree = "<group>"; };
+		76A0931425FEBB1F00127043 /* MeditationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationDetailViewController.swift; sourceTree = "<group>"; };
+		76A0931525FEBB1F00127043 /* MeditationDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeditationDetailViewController.xib; sourceTree = "<group>"; };
+		76A0931625FEBB1F00127043 /* MeditationDetailViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationDetailViewRouter.swift; sourceTree = "<group>"; };
+		76A0931A25FEBB1F00127043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76A0931D25FEBB1F00127043 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		76A0931F25FEBB1F00127043 /* CollectionViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewInterface.swift; sourceTree = "<group>"; };
+		76A0932025FEBB1F00127043 /* BaseViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewInterface.swift; sourceTree = "<group>"; };
+		76A0932125FEBB1F00127043 /* TableViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewInterface.swift; sourceTree = "<group>"; };
+		76A0932325FEBB1F00127043 /* CollectionViewPresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewPresenterInterface.swift; sourceTree = "<group>"; };
+		76A0932425FEBB1F00127043 /* BasePresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenterInterface.swift; sourceTree = "<group>"; };
+		76A0932625FEBB1F00127043 /* BaseInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInteractorOutput.swift; sourceTree = "<group>"; };
+		76A0932825FEBB1F00127043 /* CollectionViewTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewTag.swift; sourceTree = "<group>"; };
+		76A0932A25FEBB1F00127043 /* AppDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		76A0932B25FEBB1F00127043 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76A0938425FEBBCB00127043 /* Meditations_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Meditations_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A0939325FEC18A00127043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76A092EC25FEBA8A00127043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A0938525FEBBCB00127043 /* Meditations_UI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76A092E625FEBA8A00127043 = {
+			isa = PBXGroup;
+			children = (
+				76A092F125FEBA8A00127043 /* Meditations */,
+				76A092F025FEBA8A00127043 /* Products */,
+				76A0938325FEBBCB00127043 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		76A092F025FEBA8A00127043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76A092EF25FEBA8A00127043 /* Meditations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76A092F125FEBA8A00127043 /* Meditations */ = {
+			isa = PBXGroup;
+			children = (
+				76A0932925FEBB1F00127043 /* App */,
+				76A0931825FEBB1F00127043 /* Base.lproj */,
+				76A0931B25FEBB1F00127043 /* Common */,
+				76A0932725FEBB1F00127043 /* Enums */,
+				76A0930725FEBB1F00127043 /* Fonts */,
+				76A0930A25FEBB1F00127043 /* Scenes */,
+				76A0939325FEC18A00127043 /* Assets.xcassets */,
+				76A092FD25FEBA8B00127043 /* LaunchScreen.storyboard */,
+				76A0930025FEBA8B00127043 /* Info.plist */,
+			);
+			path = Meditations;
+			sourceTree = "<group>";
+		};
+		76A0930725FEBB1F00127043 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				76A0930825FEBB1F00127043 /* Hanken-Light.ttf */,
+				76A0930925FEBB1F00127043 /* Hanken-Book.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		76A0930A25FEBB1F00127043 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				76A0930B25FEBB1F00127043 /* Dashboard */,
+				76A0931125FEBB1F00127043 /* Meditation Detail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		76A0930B25FEBB1F00127043 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				76A0930C25FEBB1F00127043 /* DashboardViewInteractor.swift */,
+				76A0930D25FEBB1F00127043 /* DashboardViewController.swift */,
+				76A0930E25FEBB1F00127043 /* DashboardViewController.xib */,
+				76A0930F25FEBB1F00127043 /* DashboardViewRouter.swift */,
+				76A0931025FEBB1F00127043 /* DashboardViewPresenter.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		76A0931125FEBB1F00127043 /* Meditation Detail */ = {
+			isa = PBXGroup;
+			children = (
+				76A0931225FEBB1F00127043 /* MeditationDetailViewPresenter.swift */,
+				76A0931325FEBB1F00127043 /* MeditationDetailViewInteractor.swift */,
+				76A0931425FEBB1F00127043 /* MeditationDetailViewController.swift */,
+				76A0931525FEBB1F00127043 /* MeditationDetailViewController.xib */,
+				76A0931625FEBB1F00127043 /* MeditationDetailViewRouter.swift */,
+			);
+			path = "Meditation Detail";
+			sourceTree = "<group>";
+		};
+		76A0931825FEBB1F00127043 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				76A0931925FEBB1F00127043 /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		76A0931B25FEBB1F00127043 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				76A0931C25FEBB1F00127043 /* UI */,
+				76A0931E25FEBB1F00127043 /* View Protocols */,
+				76A0932225FEBB1F00127043 /* Presenter Protocols */,
+				76A0932525FEBB1F00127043 /* Interactor Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		76A0931C25FEBB1F00127043 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				76A0931D25FEBB1F00127043 /* LoaderView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		76A0931E25FEBB1F00127043 /* View Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				76A0931F25FEBB1F00127043 /* CollectionViewInterface.swift */,
+				76A0932025FEBB1F00127043 /* BaseViewInterface.swift */,
+				76A0932125FEBB1F00127043 /* TableViewInterface.swift */,
+			);
+			path = "View Protocols";
+			sourceTree = "<group>";
+		};
+		76A0932225FEBB1F00127043 /* Presenter Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				76A0932325FEBB1F00127043 /* CollectionViewPresenterInterface.swift */,
+				76A0932425FEBB1F00127043 /* BasePresenterInterface.swift */,
+			);
+			path = "Presenter Protocols";
+			sourceTree = "<group>";
+		};
+		76A0932525FEBB1F00127043 /* Interactor Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				76A0932625FEBB1F00127043 /* BaseInteractorOutput.swift */,
+			);
+			path = "Interactor Protocols";
+			sourceTree = "<group>";
+		};
+		76A0932725FEBB1F00127043 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				76A0932825FEBB1F00127043 /* CollectionViewTag.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		76A0932925FEBB1F00127043 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				76A0932A25FEBB1F00127043 /* AppDIContainer.swift */,
+				76A0932B25FEBB1F00127043 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		76A0938325FEBBCB00127043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76A0938425FEBBCB00127043 /* Meditations_UI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76A092EE25FEBA8A00127043 /* Meditations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76A0930325FEBA8B00127043 /* Build configuration list for PBXNativeTarget "Meditations" */;
+			buildPhases = (
+				76A092EB25FEBA8A00127043 /* Sources */,
+				76A092EC25FEBA8A00127043 /* Frameworks */,
+				76A092ED25FEBA8A00127043 /* Resources */,
+				76A0938725FEBBCB00127043 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meditations;
+			packageProductDependencies = (
+			);
+			productName = Meditations;
+			productReference = 76A092EF25FEBA8A00127043 /* Meditations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76A092E725FEBA8A00127043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					76A092EE25FEBA8A00127043 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 76A092EA25FEBA8A00127043 /* Build configuration list for PBXProject "Meditations" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76A092E625FEBA8A00127043;
+			productRefGroup = 76A092F025FEBA8A00127043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76A092EE25FEBA8A00127043 /* Meditations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76A092ED25FEBA8A00127043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A0933925FEBB2000127043 /* LaunchScreen.storyboard in Resources */,
+				76A092FF25FEBA8B00127043 /* LaunchScreen.storyboard in Resources */,
+				76A0932D25FEBB2000127043 /* Hanken-Book.ttf in Resources */,
+				76A0933625FEBB2000127043 /* MeditationDetailViewController.xib in Resources */,
+				76A0939425FEC18A00127043 /* Assets.xcassets in Resources */,
+				76A0932C25FEBB2000127043 /* Hanken-Light.ttf in Resources */,
+				76A0933025FEBB2000127043 /* DashboardViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76A092EB25FEBA8A00127043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A0933E25FEBB2000127043 /* CollectionViewPresenterInterface.swift in Sources */,
+				76A0933525FEBB2000127043 /* MeditationDetailViewController.swift in Sources */,
+				76A0933D25FEBB2000127043 /* TableViewInterface.swift in Sources */,
+				76A0934025FEBB2000127043 /* BaseInteractorOutput.swift in Sources */,
+				76A0933F25FEBB2000127043 /* BasePresenterInterface.swift in Sources */,
+				76A0933C25FEBB2000127043 /* BaseViewInterface.swift in Sources */,
+				76A0933B25FEBB2000127043 /* CollectionViewInterface.swift in Sources */,
+				76A0933325FEBB2000127043 /* MeditationDetailViewPresenter.swift in Sources */,
+				76A0933125FEBB2000127043 /* DashboardViewRouter.swift in Sources */,
+				76A0933A25FEBB2000127043 /* LoaderView.swift in Sources */,
+				76A0934225FEBB2000127043 /* AppDIContainer.swift in Sources */,
+				76A0932F25FEBB2000127043 /* DashboardViewController.swift in Sources */,
+				76A0932E25FEBB2000127043 /* DashboardViewInteractor.swift in Sources */,
+				76A0933725FEBB2000127043 /* MeditationDetailViewRouter.swift in Sources */,
+				76A0933225FEBB2000127043 /* DashboardViewPresenter.swift in Sources */,
+				76A0934325FEBB2000127043 /* AppDelegate.swift in Sources */,
+				76A0933425FEBB2000127043 /* MeditationDetailViewInteractor.swift in Sources */,
+				76A0934125FEBB2000127043 /* CollectionViewTag.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		76A092FD25FEBA8B00127043 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A092FE25FEBA8B00127043 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		76A0931925FEBB1F00127043 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76A0931A25FEBB1F00127043 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76A0930125FEBA8B00127043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76A0930225FEBA8B00127043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76A0930425FEBA8B00127043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Meditations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = project.secret.Meditations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76A0930525FEBA8B00127043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Meditations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = project.secret.Meditations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76A092EA25FEBA8A00127043 /* Build configuration list for PBXProject "Meditations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A0930125FEBA8B00127043 /* Debug */,
+				76A0930225FEBA8B00127043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76A0930325FEBA8B00127043 /* Build configuration list for PBXNativeTarget "Meditations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76A0930425FEBA8B00127043 /* Debug */,
+				76A0930525FEBA8B00127043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76A092E725FEBA8A00127043 /* Project object */;
+}

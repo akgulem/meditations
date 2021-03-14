@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Hanken-Book.ttf">
+            <string>Hanken-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="MeditopiaUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="287"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="287"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1BD-p2-SfT">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="219"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="219" id="pgs-Lh-Naa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kak-Aw-tPQ">
+                        <rect key="frame" x="0.0" y="229" width="41" height="16"/>
+                        <fontDescription key="fontDescription" name="Hanken-Book" family="Hanken" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsv-K6-qfV">
+                        <rect key="frame" x="0.0" y="255" width="36" height="14"/>
+                        <fontDescription key="fontDescription" name="Hanken-Book" family="Hanken" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="jsv-K6-qfV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1KW-eC-aez"/>
+                <constraint firstAttribute="trailing" secondItem="1BD-p2-SfT" secondAttribute="trailing" id="Fwa-CG-uY0"/>
+                <constraint firstItem="Kak-Aw-tPQ" firstAttribute="top" secondItem="1BD-p2-SfT" secondAttribute="bottom" constant="10" id="H1f-dd-lyC"/>
+                <constraint firstItem="1BD-p2-SfT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SHH-4B-NQz"/>
+                <constraint firstItem="1BD-p2-SfT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WAy-oc-grd"/>
+                <constraint firstItem="jsv-K6-qfV" firstAttribute="top" secondItem="Kak-Aw-tPQ" secondAttribute="bottom" constant="10" id="p6t-yv-CD9"/>
+                <constraint firstItem="Kak-Aw-tPQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yGl-BF-DSF"/>
+            </constraints>
+            <size key="customSize" width="357" height="287"/>
+            <connections>
+                <outlet property="cardDetailLabel" destination="jsv-K6-qfV" id="bgJ-Jn-Zro"/>
+                <outlet property="cardImageView" destination="1BD-p2-SfT" id="FVv-6D-iVU"/>
+                <outlet property="cardTitleLabel" destination="Kak-Aw-tPQ" id="7Eu-Wy-3Po"/>
+            </connections>
+            <point key="canvasLocation" x="-34.057971014492757" y="73.995535714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
